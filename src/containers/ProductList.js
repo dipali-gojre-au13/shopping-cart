@@ -9,9 +9,10 @@ class ProductList extends Component{
         let productItem = list;
 
         let pList = [];
-        productItem.map((product)=> {
+        productItem.map((product) => {
             pList.push(<ProductItem key={product.id} product={product} />);
         });
+
         return pList;
     }
 
